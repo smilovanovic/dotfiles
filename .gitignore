@@ -4,6 +4,9 @@
 
 !.bashrc
 
+!scripts/
+!scripts/**
+
 !.config/
 !.config/wezterm/
 !.config/wezterm/**/*

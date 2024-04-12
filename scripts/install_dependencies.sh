@@ -10,3 +10,11 @@ brew install --cask wezterm
 
 brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
+
+brew install neovim \
+  ripgrep \
+  fzf \
+  fd \
+  jq \
+  tree \
+  zoxide

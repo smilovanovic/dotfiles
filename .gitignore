@@ -1,0 +1,8 @@
+*
+!.gitignore
+!.config/
+!.config/wezterm/
+!.config/wezterm/**/*
+!.config/nvim/
+!.config/nvim/**/*
+/**/.DS_Store

@@ -1,6 +1,9 @@
 *
 !.gitignore
 !README.md
+
+!.bashrc
+
 !.config/
 !.config/wezterm/
 !.config/wezterm/**/*

@@ -1,3 +1,10 @@
+# debug zsh startup time using:
+# time ZSH_DEBUGRC=1 zsh -i -c exit
+
+if [ -n "${ZSH_DEBUGRC+1}" ]; then
+    zmodload zsh/zprof
+fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -121,6 +128,7 @@ alias vim=nvim
 alias vi=nvim
 alias term_clear="sudo rm -rf /var/log/asl/*.asl"
 alias clear_nvim_lsp_log="cp /dev/null /Users/stefan/.local/state/nvim/lsp.log"
+alias zsh_startup="time ZSH_DEBUGRC=1 zsh -i -c exit"
 
 killport() {
 	for p in $(lsof -ti :$1); do
@@ -150,3 +158,7 @@ ulimit -Sn 10240
 
 # autocomplete for suggestions chose on tab
 bindkey '\e\t' autosuggest-accept
+
+if [ -n "${ZSH_DEBUGRC+1}" ]; then
+    zprof
+fi

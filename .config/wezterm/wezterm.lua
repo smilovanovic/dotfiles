@@ -6,6 +6,7 @@ local config = wezterm.config_builder()
 
 -- config.color_scheme = "Gruvbox Dark (Gogh)"
 -- config.color_scheme = "Rosé Pine (Gogh)"
+config.color_scheme = "Monokai Pro (Gogh)"
 
 config.font = wezterm.font({
   -- family = "JetBrains Mono",

@@ -2,7 +2,8 @@
 !.gitignore
 !README.md
 
-!.bashrc
+!.zshrc
+!.zshenv
 
 !scripts/
 !scripts/**

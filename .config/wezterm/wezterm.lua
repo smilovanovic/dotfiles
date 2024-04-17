@@ -40,8 +40,6 @@ config.launch_menu = {
   },
 }
 
-config.native_macos_fullscreen_mode = false
-
 config.disable_default_key_bindings = false
 
 config.keys = {
@@ -72,6 +70,7 @@ config.keys = {
 tabs.apply(config)
 panes.apply(config)
 
+config.native_macos_fullscreen_mode = false
 wezterm.on("gui-startup", function(cmd)
   local _, _, window = wezterm.mux.spawn_window(cmd or {})
   window:gui_window():toggle_fullscreen()

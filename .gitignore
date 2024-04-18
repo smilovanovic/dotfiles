@@ -4,6 +4,7 @@
 
 !.zshrc
 !.zshenv
+!.p10k.zsh
 
 !scripts/
 !scripts/**

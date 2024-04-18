@@ -86,6 +86,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  fzf-tab
 	git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
@@ -137,8 +138,6 @@ killport() {
 	done
 }
 
-[ -z "$ZSH_NAME" ] && [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
 # # >>> conda initialize >>>
 # # !! Contents within this block are managed by 'conda init' !!
 # __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -157,7 +156,9 @@ killport() {
 ulimit -Sn 10240
 
 # autocomplete for suggestions chose on tab
-bindkey '\e\t' autosuggest-accept
+# bindkey '\e\t' autosuggest-accept
+
+[ -z "$ZSH_NAME" ] && [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof

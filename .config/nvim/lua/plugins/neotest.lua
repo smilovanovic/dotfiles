@@ -3,6 +3,7 @@ return {
   {
     "nvim-neotest/neotest",
     dependencies = {
+      "nvim-neotest/nvim-nio",
       "olimorris/neotest-rspec",
       "haydenmeade/neotest-jest",
     },

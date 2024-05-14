@@ -1,5 +1,10 @@
 return {
   "neovim/nvim-lspconfig",
+  init = function()
+    local keys = require("lazyvim.plugins.lsp.keymaps").get()
+    -- INFO: for whatever reason gd via telescope stopped working
+    keys[#keys + 1] = { "gd", vim.lsp.buf.definition }
+  end,
   opts = {
     -- autoformat = false,
     -- format = {

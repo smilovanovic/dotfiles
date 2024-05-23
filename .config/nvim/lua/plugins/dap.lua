@@ -1,3 +1,64 @@
+local dap = require("dap")
+
+dap.configurations.python = {
+  {
+    type = "python",
+    name = "FastAPI",
+    request = "launch",
+    program = "/Users/stefan/Projects/informa/recomnd-protocol/src/api/server.py",
+    python = { "python" },
+  },
+}
+--   -- {
+--   --   type = "python",
+--   --   python = { "/opt/homebrew/Caskroom/miniconda/base/envs/recomnd-protocol/bin/python" },
+--   --   name = "FastAPI",
+--   --   request = "launch",
+--   --   module = "uvicorn",
+--   --   args = { "src.api.server:app", "--reload" },
+--   -- },
+--   -- {
+--   --   name = "Python: FastAPI Container Debug",
+--   --   type = "python",
+--   --   request = "attach",
+--   --   port = 6578,
+--   --   host = "localhost",
+--   -- },
+--   -- {
+--   --   type = "python",
+--   --   request = "launch",
+--   --   name = "api",
+--   --   module = "debugpy",
+--   --   args = { "--listen", "5678", "--wait-for-client" },
+--   --   pythonPath = function()
+--   --     return "python"
+--   --   end,
+--   --   port = 5678,
+--   -- },
+--   -- {
+--   --   type = "python",
+--   --   request = "launch",
+--   --   name = "FastAPIII",
+--   --   module = "uvicorn",
+--   --   args = { "src.api.server:app" },
+--   --   -- program = vim.fn.getcwd() .. "/main.py",
+--   --   pythonPath = function()
+--   --     return "python"
+--   --   end,
+--   -- },
+--   -- {
+--   --   type = "python",
+--   --   request = "attach",
+--   --   name = "Attach remote",
+--   --   connect = function()
+--   --     return {
+--   --       host = "127.0.0.1",
+--   --       port = 5678,
+--   --     }
+--   --   end,
+--   -- },
+-- }
+
 return {}
 -- local dap = require("dap")
 --

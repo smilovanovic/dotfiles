@@ -4,6 +4,7 @@ return {
     formatters_by_ft = {
       ruby = { "standardrb" },
       terraform = { "terraform_fmt" },
+      python = { "autopep8" },
     },
   },
 }

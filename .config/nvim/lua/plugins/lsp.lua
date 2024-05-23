@@ -4,8 +4,12 @@ return {
     local keys = require("lazyvim.plugins.lsp.keymaps").get()
     -- INFO: for whatever reason gd via telescope stopped working
     keys[#keys + 1] = { "gd", vim.lsp.buf.definition }
+    -- keys[#keys + 1] = { "gd", ":Telescope lsp_definitions<CR>" }
   end,
   opts = {
+    inlay_hints = {
+      enabled = false,
+    },
     -- autoformat = false,
     -- format = {
     --   timeout_ms = 10000,
@@ -29,6 +33,9 @@ return {
       solargraph = {
         mason = false,
       },
+      -- ruff_lsp = {
+      --   enabled = false,
+      -- },
     },
     setup = {
       solargraph = function(_, opts)

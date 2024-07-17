@@ -16,3 +16,5 @@ export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"

@@ -1,11 +1,11 @@
 return {
   "neovim/nvim-lspconfig",
-  init = function()
-    local keys = require("lazyvim.plugins.lsp.keymaps").get()
-    -- INFO: for whatever reason gd via telescope stopped working
-    keys[#keys + 1] = { "gd", vim.lsp.buf.definition }
-    -- keys[#keys + 1] = { "gd", ":Telescope lsp_definitions<CR>" }
-  end,
+  -- init = function()
+  --   local keys = require("lazyvim.plugins.lsp.keymaps").get()
+  --   -- INFO: for whatever reason gd via telescope stopped working
+  --   keys[#keys + 1] = { "gd", vim.lsp.buf.definition }
+  --   -- keys[#keys + 1] = { "gd", ":Telescope lsp_definitions<CR>" }
+  -- end,
   opts = {
     inlay_hints = {
       enabled = false,

@@ -3,6 +3,9 @@
 
 # .zshenv → .zprofile → .zshrc → .zlogin
 
+# export PATH=/opt/homebrew/bin:$PATH
+# eval "$(/opt/homebrew/bin/brew shellenv)"
+
 export XDG_CONFIG_HOME="$HOME/.config"
 
 export NVM_DIR="$HOME/.nvm"

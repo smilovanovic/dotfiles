@@ -10,6 +10,7 @@ return {
         ["neotest-jest"] = {},
         ["neotest-python"] = {
           args = { "--log-level", "DEBUG", "-v", "-s" },
+          runner = "django",
         },
       },
     },

@@ -2,7 +2,7 @@ vim.keymap.set({ "n", "v" }, "<leader>o", ":Gen<CR>")
 
 return {
   "David-Kunz/gen.nvim",
-  config = {
+  opts = {
     -- model = "mistral", -- The default model to use.
     model = "codellama:7b", -- The default model to use.
     display_mode = "split", -- The display mode. Can be "float" or "split".

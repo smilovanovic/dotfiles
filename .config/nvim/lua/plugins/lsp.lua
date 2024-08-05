@@ -33,9 +33,6 @@ return {
       solargraph = {
         mason = false,
       },
-      -- ruff_lsp = {
-      --   enabled = false,
-      -- },
     },
     setup = {
       solargraph = function(_, opts)

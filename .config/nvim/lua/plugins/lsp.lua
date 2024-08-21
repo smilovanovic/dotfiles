@@ -33,6 +33,16 @@ return {
       solargraph = {
         mason = false,
       },
+      vtsls = {
+        settings = {
+          typescript = {
+            preferences = {
+              importModuleSpecifier = "project-relative",
+              importModuleSpecifierEnding = "minimal",
+            },
+          },
+        },
+      },
     },
     setup = {
       solargraph = function(_, opts)
@@ -41,14 +51,14 @@ return {
           formatting = false,
         }
       end,
-      tsserver = function(_, opts)
-        opts.init_options = {
-          preferences = {
-            importModuleSpecifierPreference = "relative",
-            importModuleSpecifierEnding = "minimal",
-          },
-        }
-      end,
+      -- tsserver = function(_, opts)
+      --   opts.init_options = {
+      --     preferences = {
+      --       importModuleSpecifierPreference = "relative",
+      --       importModuleSpecifierEnding = "minimal",
+      --     },
+      --   }
+      -- end,
     },
   },
 }

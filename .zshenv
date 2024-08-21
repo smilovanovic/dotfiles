@@ -21,3 +21,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
+
+export PATH="$HOME/.jenv/bin:$PATH"

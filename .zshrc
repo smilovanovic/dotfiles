@@ -148,3 +148,5 @@ ulimit -Sn 10240
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
 fi
+
+eval "$(jenv init -)"

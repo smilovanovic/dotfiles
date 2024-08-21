@@ -7,7 +7,9 @@ return {
     },
     opts = {
       adapters = {
-        ["neotest-jest"] = {},
+        ["neotest-jest"] = {
+          jestCommand = "npx jest --detectOpenHandles",
+        },
         ["neotest-python"] = {
           args = { "--log-level", "DEBUG", "-v", "-s" },
           runner = "django",

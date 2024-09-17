@@ -6,6 +6,7 @@ return {
   --   keys[#keys + 1] = { "gd", vim.lsp.buf.definition }
   --   -- keys[#keys + 1] = { "gd", ":Telescope lsp_definitions<CR>" }
   -- end,
+  dependencies = {},
   opts = {
     inlay_hints = {
       enabled = false,
@@ -15,6 +16,11 @@ return {
     --   timeout_ms = 10000,
     -- },
     servers = {
+      typos_lsp = {
+        init_options = {
+          diagnosticSeverity = "Warning",
+        },
+      },
       lua_ls = {
         settings = {
           Lua = {

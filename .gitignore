@@ -14,4 +14,6 @@
 !.config/wezterm/**/*
 !.config/nvim/
 !.config/nvim/**/*
+!.config/lazygit/
+!.config/lazygit/**/*
 /**/.DS_Store

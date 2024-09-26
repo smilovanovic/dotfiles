@@ -16,11 +16,17 @@ return {
     --   timeout_ms = 10000,
     -- },
     servers = {
-      typos_lsp = {
-        init_options = {
-          diagnosticSeverity = "Warning",
-        },
+      tsserver = {
+        enabled = false,
       },
+      ts_ls = {
+        enabled = false,
+      },
+      -- typos_lsp = {
+      --   init_options = {
+      --     diagnosticSeverity = "Warning",
+      --   },
+      -- },
       lua_ls = {
         settings = {
           Lua = {

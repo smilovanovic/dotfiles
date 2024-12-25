@@ -13,7 +13,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+# export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -23,3 +24,10 @@ export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
 export PATH="$HOME/.jenv/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/stefan/.cache/lm-studio/bin"
+
+. "$HOME/.local/bin/env"
+
+# export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"

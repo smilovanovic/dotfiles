@@ -20,7 +20,12 @@ vim.keymap.set("n", "<leader>Y", "ggyG<C-o>", { desc = "Yank everything" })
 vim.keymap.set("n", "<leader>wv", "<C-w>v", { desc = "Split window right" })
 vim.keymap.set("n", "<leader>ws", "<C-w>s", { desc = "Split window below" })
 vim.keymap.set("n", "<leader>wo", "<C-w>o", { desc = "Close other windows" })
+vim.keymap.set("n", "<leader>T", ":vs#", { desc = "Open last closed window" })
 
 -- buffer management
 vim.keymap.set("n", "<leader>bw", ":bd<CR><C-w>q", { desc = "Delete buffer and close window" })
 vim.keymap.set("n", "<leader><CR>", ":b term<CR>", { desc = "Switch to terminal buffer" })
+
+-- terminal
+vim.keymap.set("t", "<Esc><cr>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Normal mode" })

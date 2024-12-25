@@ -17,18 +17,18 @@ return {
     -- see below for full list of optional dependencies 👇
   },
   keys = {
-    { "<leader>no", "<cmd>ObsidianOpen<cr>", desc = "Obsidian open note" },
-    { "<leader>nn", "<cmd>ObsidianNew<cr>", desc = "Obsidian new note" },
-    { "<leader>nf", "<cmd>ObsidianQuickSwitch<cr>", desc = "Obsidian find file" },
-    { "<leader>ns", "<cmd>ObsidianSearch<cr>", desc = "Obsidian search" },
-    { "<leader>nw", "<cmd>ObsidianWorkspace<cr>", desc = "Obsidian workspace switch" },
-    { "<leader>ngd", "<cmd>ObsidianFollowLink vsplit<cr>", desc = "Obsidian follow vsplit" },
-    { "<leader>ngr", "<cmd>ObsidianBacklinks<cr>", desc = "Obsidian backlinks" },
-    { "<leader>nt", "<cmd>ObsidianTags<cr>", desc = "Obsidian tags" },
-    { "<leader>nll", "<cmd>ObsidianLinks<cr>", desc = "Obsidian links search" },
-    { "<leader>nls", "<cmd>ObsidianLink<cr>", desc = "Obsidian link selected to existing", mode = "v" },
-    { "<leader>nln", "<cmd>ObsidianLinkNew<cr>", desc = "Obsidian link selected to new", mode = "v" },
-    { "<leader>ncr", "<cmd>ObsidianRename<cr>", desc = "Obsidian rename" },
+    { "<leader>oo", "<cmd>ObsidianOpen<cr>", desc = "Obsidian open note" },
+    { "<leader>on", "<cmd>ObsidianNew<cr>", desc = "Obsidian new note" },
+    { "<leader>of", "<cmd>ObsidianQuickSwitch<cr>", desc = "Obsidian find file" },
+    { "<leader>os", "<cmd>ObsidianSearch<cr>", desc = "Obsidian search" },
+    { "<leader>ow", "<cmd>ObsidianWorkspace<cr>", desc = "Obsidian workspace switch" },
+    { "<leader>ogd", "<cmd>ObsidianFollowLink vsplit<cr>", desc = "Obsidian follow vsplit" },
+    { "<leader>ogr", "<cmd>ObsidianBacklinks<cr>", desc = "Obsidian backlinks" },
+    { "<leader>ot", "<cmd>ObsidianTags<cr>", desc = "Obsidian tags" },
+    { "<leader>oll", "<cmd>ObsidianLinks<cr>", desc = "Obsidian links search" },
+    { "<leader>ols", "<cmd>ObsidianLink<cr>", desc = "Obsidian link selected to existing", mode = "v" },
+    { "<leader>oln", "<cmd>ObsidianLinkNew<cr>", desc = "Obsidian link selected to new", mode = "v" },
+    { "<leader>ocr", "<cmd>ObsidianRename<cr>", desc = "Obsidian rename" },
   },
   opts = {
     workspaces = {
@@ -43,7 +43,7 @@ return {
     },
     completion = {
       -- Set to false to disable completion.
-      nvim_cmp = true,
+      nvim_cmp = false,
       -- Trigger completion at 2 chars.
       min_chars = 1,
     },
@@ -71,7 +71,7 @@ return {
     },
     picker = {
       -- Set your preferred picker. Can be one of 'telescope.nvim', 'fzf-lua', or 'mini.pick'.
-      name = "telescope.nvim",
+      name = "fzf-lua",
       -- Optional, configure key mappings for the picker. These are the defaults.
       -- Not all pickers support all mappings.
       mappings = {

@@ -1,3 +1,8 @@
+local get_root_dir = function(fname)
+  local util = require("lspconfig.util")
+  return util.root_pattern("package.json", "tsconfig.json")(fname) or util.root_pattern(".git")(fname)
+end
+
 return {
   "neovim/nvim-lspconfig",
   -- init = function()
@@ -16,9 +21,6 @@ return {
     --   timeout_ms = 10000,
     -- },
     servers = {
-      tsserver = {
-        enabled = false,
-      },
       ts_ls = {
         enabled = false,
       },
@@ -46,6 +48,8 @@ return {
         mason = false,
       },
       vtsls = {
+        enabled = true,
+        -- root_dir = get_root_dir,
         settings = {
           typescript = {
             preferences = {

@@ -25,6 +25,8 @@ export PATH="$PATH:$GOPATH/bin"
 
 export PATH="$HOME/.jenv/bin:$PATH"
 
+export PATH="$PATH:/opt/homebrew/opt/python@3.13/libexec/bin"
+
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/stefan/.cache/lm-studio/bin"
 

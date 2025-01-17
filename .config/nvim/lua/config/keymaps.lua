@@ -6,7 +6,7 @@
 vim.keymap.set("n", "C", '"_C')
 vim.keymap.set("n", "c", '"_c')
 vim.keymap.set("v", "c", '"_c')
-vim.keymap.set("x", "p", '"_dP', { desc = "Preserve clipboard after visual paste" })
+-- vim.keymap.set("x", "p", '"_dP', { desc = "Preserve clipboard after visual paste" })
 vim.keymap.set("n", "<leader>fp", ":let @+ = expand('%')<CR>", { silent = true, desc = "Copy current file path" })
 vim.keymap.set("n", "<leader>rp", "i<Up><CR><Esc><Esc>", { silent = true, desc = "Run last terminal command" })
 vim.keymap.set("n", "gw", "*N", { desc = "Search word under cursor" })

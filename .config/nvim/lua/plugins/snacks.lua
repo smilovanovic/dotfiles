@@ -1,6 +1,10 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    rename = { enabled = true },
+    gitbrowse = {
+      enabled = true,
+    },
     styles = {
       zen = {
         width = 200,
@@ -23,6 +27,15 @@ return {
         diagnostics = true,
         inlay_hints = true,
       },
+    },
+  },
+  keys = {
+    {
+      "<leader>go",
+      function()
+        require("snacks").gitbrowse()
+      end,
+      desc = "Open git repo file in browser",
     },
   },
 }

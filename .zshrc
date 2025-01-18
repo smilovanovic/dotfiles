@@ -126,7 +126,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias git_clean_branches="git branch | grep -v -E '(master|main)' | xargs git branch -D"
 alias vim=nvim
-alias vi=nvim
+alias vi='NVIM_APPNAME=nvim-custom nvim'
 alias term_clear="sudo rm -rf /var/log/asl/*.asl"
 alias clear_nvim_lsp_log="cp /dev/null /Users/stefan/.local/state/nvim/lsp.log"
 alias zsh_startup="time ZSH_DEBUGRC=1 zsh -i -c exit"

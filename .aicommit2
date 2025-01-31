@@ -1,0 +1,9 @@
+includeBody=true
+temperature=0.1
+codeReview=false
+generate=1
+
+[OLLAMA]
+host=http://localhost:11434
+model[]=qwen2.5-coder:3b
+numCtx=8000

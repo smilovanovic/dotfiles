@@ -5,6 +5,7 @@
 !.zshrc
 !.zshenv
 !.p10k.zsh
+!.aicommit2
 
 !scripts/
 !scripts/**

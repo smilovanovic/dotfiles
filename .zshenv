@@ -33,3 +33,5 @@ export PATH="$PATH:/Users/stefan/.cache/lm-studio/bin"
 . "$HOME/.local/bin/env"
 
 # export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+
+export LLM_KEY=NONE

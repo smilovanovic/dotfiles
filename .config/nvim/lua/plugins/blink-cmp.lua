@@ -15,10 +15,10 @@ return {
           assistant = { text = "⚡ ", hl = "Added" },
         },
         url = "http://localhost:11434/api/chat", -- your url
-        model = "qwen2.5-coder:3b",
+        model = "qwen2.5-coder:1.5b",
         api_type = "ollama",
-        temperature = 0.3,
-        top_p = 0.7,
+        temperature = 0.1,
+        top_p = 0.9,
         max_tokens = 256,
 
         style = "right", -- "float",
@@ -51,7 +51,7 @@ return {
               ---         ollama
               --------------------------------
               url = "http://localhost:11434/v1/completions",
-              model = "qwen2.5-coder:3b",
+              model = "qwen2.5-coder:1.5b",
               api_type = "ollama",
               ---------- end ollama ----------
 
@@ -63,8 +63,8 @@ return {
               auto_trigger = true,
               style = "blink.cmp", -- virtual_text, nvim-cmp or blink.cmp
               timeout = 10, -- max request time
-              throttle = 0, -- 1000 only send the request every x milliseconds, use 0 to disable throttle.
-              debounce = 0, -- 400 debounce the request in x milliseconds, set to 0 to disable debounce
+              throttle = 200, -- 1000 only send the request every x milliseconds, use 0 to disable throttle.
+              debounce = 200, -- 400 debounce the request in x milliseconds, set to 0 to disable debounce
               virtual_text = {
                 accept = {
                   mode = "i",
@@ -106,7 +106,7 @@ return {
       sources = {
         -- if you want to use auto-complete
         -- default = { "lsp", "llm" },
-        default = { "lsp", "path", "snippets", "buffer" },
+        default = { "lsp", "path", "snippets", "buffer", "llm" },
         providers = {
           llm = {
             name = "llm",

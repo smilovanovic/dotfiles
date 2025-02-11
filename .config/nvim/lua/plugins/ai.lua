@@ -3,7 +3,7 @@ vim.keymap.set({ "n", "v" }, "<leader>aa", ":Gen<CR>")
 return {
   "David-Kunz/gen.nvim",
   opts = {
-    model = "qwen2.5-coder:3b", -- The default model to use.
+    model = "qwen2.5-coder:1.5b", -- The default model to use.
     quit_map = "q", -- set keymap to close the response window
     retry_map = "<c-r>", -- set keymap to re-send the current prompt
     accept_map = "<c-cr>", -- set keymap to replace the previous selection with the last result

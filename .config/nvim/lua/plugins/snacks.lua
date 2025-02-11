@@ -37,5 +37,35 @@ return {
       end,
       desc = "Open git repo file in browser",
     },
+    {
+      "<leader>sf",
+      function()
+        local Snacks = require("snacks")
+        Snacks.picker({
+          finder = "proc",
+          cmd = "fd",
+          args = { "--type", "d", "--exclude", ".git" },
+          title = "Select search directory",
+          layout = {
+            preset = "select",
+          },
+          actions = {
+            confirm = function(picker, item)
+              picker:close()
+              vim.schedule(function()
+                Snacks.picker.files({
+                  cwd = item.file,
+                })
+              end)
+            end,
+          },
+          transform = function(item)
+            item.file = item.text
+            item.dir = true
+          end,
+        })
+      end,
+      desc = "Search in dir",
+    },
   },
 }

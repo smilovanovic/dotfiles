@@ -1,3 +1,5 @@
+local model = "qwen2.5-coder:7b"
+
 return {
   {
     "Kurama622/llm.nvim",
@@ -5,7 +7,7 @@ return {
     -- cmd = { "LLMSessionToggle", "LLMSelectedTextHandler", "LLMAppHandler" },
     lazy = false,
     config = function()
-      local tools = require("llm.common.tools")
+      local tools = require("llm.tools")
 
       require("llm").setup({
         prompt = "You are a helpful software engineer.",
@@ -15,11 +17,11 @@ return {
           assistant = { text = "⚡ ", hl = "Added" },
         },
         url = "http://localhost:11434/api/chat", -- your url
-        model = "qwen2.5-coder:1.5b",
+        model = model,
         api_type = "ollama",
         temperature = 0.1,
         top_p = 0.9,
-        max_tokens = 256,
+        max_tokens = 2048,
 
         style = "right", -- "float",
 
@@ -51,13 +53,13 @@ return {
               ---         ollama
               --------------------------------
               url = "http://localhost:11434/v1/completions",
-              model = "qwen2.5-coder:1.5b",
+              model = model,
               api_type = "ollama",
               ---------- end ollama ----------
 
-              n_completions = 1,
-              context_window = 2048,
-              max_tokens = 1024,
+              n_completions = 3,
+              context_window = 8000,
+              max_tokens = 2048,
 
               ignore_filetypes = {},
               auto_trigger = true,
@@ -106,7 +108,7 @@ return {
       sources = {
         -- if you want to use auto-complete
         -- default = { "lsp", "llm" },
-        default = { "lsp", "path", "snippets", "buffer", "llm" },
+        default = { "lsp", "path", "snippets", "buffer" },
         providers = {
           llm = {
             name = "llm",

@@ -2,6 +2,7 @@ includeBody=true
 temperature=0.1
 codeReview=false
 generate=1
+timeout=100000
 
 [OLLAMA]
 host=http://localhost:11434

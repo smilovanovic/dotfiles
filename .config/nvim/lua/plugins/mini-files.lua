@@ -1,7 +1,7 @@
 return {
   "echasnovski/mini.files",
   -- "smilovanovic/mini.files",
-  -- enabled = false,
+  enabled = false,
   opts = {
     windows = {
       -- Maximum number of windows to show side by side

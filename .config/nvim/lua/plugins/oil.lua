@@ -1,5 +1,7 @@
 local function open_oil_float(cwd)
-  require("oil").open_float((cwd and vim.uv.cwd() or nil), { preview = { vertical = true } })
+  require("oil").open_float((cwd and vim.uv.cwd() or nil), {
+    -- preview = { vertical = true }
+  })
 end
 
 return {

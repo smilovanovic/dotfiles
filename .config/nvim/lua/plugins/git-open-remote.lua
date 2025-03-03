@@ -1,5 +1,5 @@
-return {}
--- return {
---   dir = "~/Projects/neovim/git-open-remote.nvim",
---   opts = {},
--- }
+return {
+  dir = "~/Projects/neovim/git-open-remote.nvim",
+  enabled = false,
+  opts = {},
+}

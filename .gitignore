@@ -17,4 +17,6 @@
 !.config/nvim/**/*
 !.config/lazygit/
 !.config/lazygit/**/*
+!.config/vscode/
+!.config/vscode/**/*
 /**/.DS_Store

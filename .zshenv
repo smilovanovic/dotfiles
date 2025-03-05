@@ -34,4 +34,9 @@ export PATH="$PATH:/Users/stefan/.cache/lm-studio/bin"
 
 # export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
 
+export PATH="$PATH:$HOME/.slack/bin"
+
 export LLM_KEY=NONE
+
+# INFO: LLMs
+export OLLAMA_API_BASE=http://127.0.0.1:11434

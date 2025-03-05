@@ -43,6 +43,11 @@ config.launch_menu = {
 config.disable_default_key_bindings = false
 
 config.keys = {
+  {
+    key = "Enter",
+    mods = "ALT",
+    action = wezterm.action.DisableDefaultAssignment,
+  },
   -- Make Option-Left equivalent to Alt-b which many line editors interpret as backward-word
   {
     key = "LeftArrow",

@@ -1,5 +1,4 @@
 {
-  // "editor.fontFamily": "'Hack Nerd Font', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontFamily": "Hack Nerd Font",
   "editor.fontSize": 13,
   "editor.lineHeight": 15,
@@ -11,19 +10,52 @@
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
   "editor.formatOnSave": true,
-  "workbench.editor.showTabs": "single",
+  "breadcrumbs.enabled": false,
+  "workbench.editor.showTabs": "multiple", // single for vim like ui
   "workbench.colorTheme": "Gruvbox Dark Hard",
   "window.commandCenter": false,
+  "window.density.editorTabHeight": "compact",
   "accessibility.dimUnfocused.enabled": true,
   "accessibility.dimUnfocused.opacity": 0.5,
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
   "vim.useSystemClipboard": true,
+  // highlighted yank
   "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(250, 189, 47, 0.5)",
+  "vim.highlightedyank.textColor": "#202020",
+  "vim.highlightedyank.duration": 150,
+  //
   "vim.smartRelativeLine": true,
   "vim.leader": "space",
   "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "H"
+      ],
+      "commands": [
+        "workbench.action.previousEditorInGroup"
+      ],
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "commands": [
+        "workbench.action.nextEditorInGroup"
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ],
+    },
     {
       "before": [
         "<leader>",
@@ -104,8 +136,7 @@
     {
       "before": [
         "<leader>",
-        "f",
-        "f"
+        "<leader>"
       ],
       "commands": [
         "workbench.action.quickOpen"
@@ -139,6 +170,16 @@
       ],
       "commands": [
         "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "o"
+      ],
+      "commands": [
+        "workbench.action.closeOtherEditors"
       ]
     },
     {
@@ -329,4 +370,5 @@
       "silent": true
     },
   ],
+  "typescript.updateImportsOnFileMove.enabled": "always",
 }

@@ -6,6 +6,7 @@
 !.zshenv
 !.p10k.zsh
 !.aicommit2
+!.aider.conf.yml
 
 !scripts/
 !scripts/**

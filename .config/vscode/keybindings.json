@@ -1,6 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
-  // INFO: terminal dsasdadadasd
+  // INFO: terminal
   {
     "key": "escape",
     "command": "runCommands",

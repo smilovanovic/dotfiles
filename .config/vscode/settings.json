@@ -1,4 +1,8 @@
 {
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.fontFamily": "Hack Nerd Font",
   "editor.fontSize": 13,
   "editor.lineHeight": 15,
@@ -20,6 +24,8 @@
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "/opt/homebrew/bin/nvim",
   "vim.useSystemClipboard": true,
   // highlighted yank
   "vim.highlightedyank.enable": true,
@@ -161,6 +167,18 @@
       "commands": [
         "workbench.panel.markers.view.toggleVisibility"
       ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+        "workbench.action.acceptSelectedQuickOpenItem"
+      ],
+      "when": "!activeEditorGroupEmpty"
     },
     {
       "before": [
@@ -370,5 +388,4 @@
       "silent": true
     },
   ],
-  "typescript.updateImportsOnFileMove.enabled": "always",
 }

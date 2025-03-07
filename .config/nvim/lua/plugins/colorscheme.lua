@@ -1,5 +1,14 @@
 return {
   {
+    "folke/tokyonight.nvim",
+    enabled = false,
+    lazy = false,
+    priority = 1000,
+    opts = {
+      dim_inactive = true,
+    },
+  },
+  {
     "catppuccin/nvim",
     enabled = false,
   },
@@ -18,6 +27,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "gruvbox",
+      -- colorscheme = "tokyonight",
     },
   },
 }

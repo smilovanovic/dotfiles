@@ -4,7 +4,8 @@ local panes = require("panes")
 
 local config = wezterm.config_builder()
 
-config.color_scheme = "Gruvbox Dark (Gogh)"
+config.color_scheme = "Gruvbox dark, hard (base16)"
+-- config.color_scheme = "Tokyo Night (Gogh)"
 -- config.color_scheme = "Rosé Pine (Gogh)"
 -- config.color_scheme = "Monokai Pro (Gogh)"
 
@@ -18,9 +19,6 @@ config.font = wezterm.font({
 -- 	harfbuzz_features = { "zero" },
 -- })
 config.font_size = 13.5
-
--- config.use_fancy_tab_bar = false
-config.hide_tab_bar_if_only_one_tab = false
 
 config.default_cursor_style = "BlinkingUnderline"
 

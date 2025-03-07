@@ -8,12 +8,13 @@ return {
   "stevearc/oil.nvim",
   opts = {
     default_file_explorer = true,
-    columns = {
-      "icon",
-      "permissions",
-      "size",
-      "mtime",
-    },
+    skip_confirm_for_simple_edits = true,
+    -- columns = {
+    --   "icon",
+    --   "permissions",
+    --   "size",
+    --   "mtime",
+    -- },
     keymaps = {
       ["g?"] = { "actions.show_help", mode = "n" },
       ["<CR>"] = "actions.select",
@@ -36,6 +37,12 @@ return {
       ["gx"] = "actions.open_external",
       ["g."] = { "actions.toggle_hidden", mode = "n" },
       ["g\\"] = { "actions.toggle_trash", mode = "n" },
+      ["="] = {
+        desc = "Save",
+        callback = function()
+          require("oil").save()
+        end,
+      },
     },
     view_options = {
       show_hidden = true,

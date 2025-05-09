@@ -1,7 +1,7 @@
 return {
   {
     dir = "~/Projects/neovim/ai-buddy",
-    -- enabled = false,
+    enabled = false,
     opts = {},
   },
   {

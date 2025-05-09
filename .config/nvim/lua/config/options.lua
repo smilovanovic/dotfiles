@@ -5,6 +5,8 @@ vim.opt.colorcolumn = "80"
 
 vim.g.snacks_animate = false
 
+-- vim.g.lazyvim_python_lsp = "pylsp"
+
 -- INFO: disable "delete-and-recreate" method when saving files.
 -- which causes issues with nx.dev watch
 vim.cmd([[ set nobackup ]])

@@ -53,7 +53,7 @@ return {
             confirm = function(picker, item)
               picker:close()
               vim.schedule(function()
-                Snacks.picker.files({
+                Snacks.picker.grep({
                   cwd = item.file,
                 })
               end)

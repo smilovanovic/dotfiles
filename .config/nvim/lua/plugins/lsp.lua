@@ -59,6 +59,17 @@ return {
           },
         },
       },
+      -- pylsp = {
+      --   settings = {
+      --     pylsp = {
+      --       plugins = {
+      --         rope_autoimport = {
+      --           enabled = true,
+      --         },
+      --       },
+      --     },
+      --   },
+      -- },
     },
     setup = {
       solargraph = function(_, opts)

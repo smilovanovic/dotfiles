@@ -51,6 +51,10 @@ return {
         { "name", "asc" },
       },
     },
+    float = {
+      max_width = 0.5,
+      max_height = 0.5,
+    },
   },
   keys = {
     {

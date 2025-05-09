@@ -388,4 +388,7 @@
       "silent": true
     },
   ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

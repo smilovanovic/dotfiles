@@ -3,6 +3,20 @@ local get_root_dir = function(fname)
   return util.root_pattern("package.json", "tsconfig.json")(fname) or util.root_pattern(".git")(fname)
 end
 
+-- vim.lsp.config("pyright", {
+--   cmd = { "ty", "server" },
+--   filetypes = { "python" },
+--   root_markers = { "ty.toml", "pyproject.toml", ".git" },
+--   init_options = {
+--     settings = {
+--       environment = {
+--         ["python-platform"] = "darwin",
+--       },
+--     },
+--   },
+-- })
+-- vim.lsp.enable("ty")
+
 return {
   "neovim/nvim-lspconfig",
   -- init = function()
@@ -21,6 +35,9 @@ return {
     --   timeout_ms = 10000,
     -- },
     servers = {
+      -- pyright = {
+      --   enabled = false,
+      -- },
       ts_ls = {
         enabled = false,
       },

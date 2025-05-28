@@ -4,10 +4,10 @@ local panes = require("panes")
 
 local config = wezterm.config_builder()
 
-config.color_scheme = "Gruvbox dark, hard (base16)"
+-- config.color_scheme = "Gruvbox dark, hard (base16)"
 -- config.color_scheme = "Tokyo Night (Gogh)"
 -- config.color_scheme = "Rosé Pine (Gogh)"
--- config.color_scheme = "Monokai Pro (Gogh)"
+config.color_scheme = "Catppuccin Mocha (Gogh)"
 
 config.font = wezterm.font({
   -- family = "JetBrains Mono",
@@ -38,6 +38,13 @@ config.launch_menu = {
   },
 }
 
+config.window_padding = {
+  left = 0,
+  right = 0,
+  top = 0,
+  bottom = 0,
+}
+
 config.disable_default_key_bindings = false
 
 config.keys = {
@@ -64,6 +71,11 @@ config.keys = {
     action = wezterm.action.ShowLauncherArgs({ flags = "FUZZY|LAUNCH_MENU_ITEMS|WORKSPACES" }),
   },
   {
+    key = "p",
+    mods = "CMD",
+    action = wezterm.action.ActivateCommandPalette,
+  },
+  {
     key = "Enter",
     mods = "CMD",
     action = wezterm.action.ToggleFullScreen,
@@ -71,7 +83,7 @@ config.keys = {
 }
 
 tabs.apply(config)
-panes.apply(config)
+-- panes.apply(config)
 
 config.native_macos_fullscreen_mode = false
 wezterm.on("gui-startup", function(cmd)

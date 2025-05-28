@@ -1,33 +1,33 @@
 return {
   {
-    "folke/tokyonight.nvim",
-    enabled = false,
-    lazy = false,
-    priority = 1000,
-    opts = {
-      dim_inactive = true,
-    },
-  },
-  {
     "catppuccin/nvim",
-    enabled = false,
-  },
-  {
-    "ellisonleao/gruvbox.nvim",
+    name = "catppuccin",
     priority = 1000,
     opts = {
-      contrast = "hard",
-      dim_inactive = true,
-      overrides = {
-        NormalNC = { bg = "#26292a" },
+      dim_inactive = {
+        enabled = true,
+        shade = "light",
+        percentage = 0.7,
       },
     },
   },
+  -- {
+  --   "ellisonleao/gruvbox.nvim",
+  --   priority = 1000,
+  --   opts = {
+  --     contrast = "hard",
+  --     dim_inactive = true,
+  --     overrides = {
+  --       -- NormalNC = { bg = "#26292a" },
+  --       NormalNC = { bg = "#32302f" },
+  --     },
+  --   },
+  -- },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
-      -- colorscheme = "tokyonight",
+      -- colorscheme = "gruvbox",
+      colorscheme = "catppuccin-mocha",
     },
   },
 }

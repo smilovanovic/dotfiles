@@ -9,12 +9,12 @@ return {
   opts = {
     default_file_explorer = true,
     skip_confirm_for_simple_edits = true,
-    -- columns = {
-    --   "icon",
-    --   "permissions",
-    --   "size",
-    --   "mtime",
-    -- },
+    columns = {
+      "icon",
+      -- "permissions",
+      "size",
+      -- "mtime",
+    },
     keymaps = {
       ["g?"] = { "actions.show_help", mode = "n" },
       ["<CR>"] = "actions.select",

@@ -91,8 +91,12 @@ plugins=(
 	zsh-syntax-highlighting
 	z
   fzf-tab
+  # zsh-vi-mode
+  # nvm
+  zsh-uv-env
 )
 
+# TODO: uncomment to reactivate oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -130,6 +134,7 @@ alias vi='NVIM_APPNAME=nvim-custom nvim'
 alias term_clear="sudo rm -rf /var/log/asl/*.asl"
 alias clear_nvim_lsp_log="cp /dev/null /Users/stefan/.local/state/nvim/lsp.log"
 alias zsh_startup="time ZSH_DEBUGRC=1 zsh -i -c exit"
+alias cat="bat"
 
 killport() {
 	for p in $(lsof -ti :$1); do

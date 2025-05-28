@@ -13,10 +13,11 @@ end
 
 return {
   "akinsho/bufferline.nvim",
+  -- enabled = false,
   opts = {
     -- INFO: :h bufferline-configuration
     options = {
-      mode = "tabs",
+      -- mode = "tabs",
       always_show_bufferline = true,
       show_close_icon = false,
       show_buffer_close_icons = false,

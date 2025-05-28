@@ -1,6 +1,7 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    indent = { enabled = true },
     rename = { enabled = true },
     gitbrowse = {
       enabled = true,

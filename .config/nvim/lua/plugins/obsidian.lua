@@ -1,8 +1,8 @@
 return {
-  "epwalsh/obsidian.nvim",
+  "obsidian-nvim/obsidian.nvim",
   version = "*", -- recommended, use latest release instead of latest commit
   lazy = true,
-  enabled = false,
+  -- enabled = false,
   -- ft = "markdown",
   -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
   event = {
@@ -10,12 +10,6 @@ return {
     -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
     "BufReadPre /Users/stefan/Obsidian/**.md",
     "BufNewFile /Users/stefan/Obsidian/**.md",
-  },
-  dependencies = {
-    -- Required.
-    "nvim-lua/plenary.nvim",
-
-    -- see below for full list of optional dependencies 👇
   },
   keys = {
     { "<leader>oo", "<cmd>ObsidianOpen<cr>", desc = "Obsidian open note" },
@@ -43,10 +37,9 @@ return {
       },
     },
     completion = {
-      -- Set to false to disable completion.
       nvim_cmp = false,
-      -- Trigger completion at 2 chars.
-      min_chars = 1,
+      blink = true,
+      min_chars = 2,
     },
     mappings = {
       -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
@@ -71,14 +64,9 @@ return {
       },
     },
     picker = {
-      -- Set your preferred picker. Can be one of 'telescope.nvim', 'fzf-lua', or 'mini.pick'.
-      name = "fzf-lua",
-      -- Optional, configure key mappings for the picker. These are the defaults.
-      -- Not all pickers support all mappings.
+      name = "snacks.pick",
       mappings = {
-        -- Create a new note from your query.
         new = "<C-x>",
-        -- Insert a link to the selected note.
         insert_link = "<C-l>",
       },
     },

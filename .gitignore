@@ -20,6 +20,8 @@
 !.config/lazygit/**/*
 !.config/vscode/
 !.config/vscode/**/*
+!.config/aicommit2/
+!.config/aicommit2/**/*
 !.config/tmux/
 !.config/tmux/**/*
 .config/tmux/plugins/**/*

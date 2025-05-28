@@ -46,6 +46,7 @@ config.window_padding = {
 }
 
 config.disable_default_key_bindings = false
+-- config.disable_default_key_bindings = true
 
 config.keys = {
   {

@@ -6,5 +6,5 @@ timeout=100000
 
 [OLLAMA]
 host=http://localhost:11434
-model[]=qwen2.5-coder:1.5b
+model[]=qwen2.5-coder:7b
 numCtx=8000

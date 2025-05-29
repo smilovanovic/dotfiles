@@ -4,10 +4,10 @@ local panes = require("panes")
 
 local config = wezterm.config_builder()
 
--- config.color_scheme = "Gruvbox dark, hard (base16)"
+config.color_scheme = "Gruvbox dark, hard (base16)"
 -- config.color_scheme = "Tokyo Night (Gogh)"
 -- config.color_scheme = "Rosé Pine (Gogh)"
-config.color_scheme = "Catppuccin Mocha (Gogh)"
+-- config.color_scheme = "Catppuccin Mocha (Gogh)"
 
 config.font = wezterm.font({
   -- family = "JetBrains Mono",

@@ -41,8 +41,8 @@ config.launch_menu = {
 config.window_padding = {
   left = 0,
   right = 0,
-  top = 0,
-  bottom = 0,
+  top = 5,
+  bottom = 5,
 }
 
 config.disable_default_key_bindings = false
@@ -52,6 +52,16 @@ config.keys = {
   {
     key = "Enter",
     mods = "ALT",
+    action = wezterm.action.DisableDefaultAssignment,
+  },
+  {
+    key = "H",
+    mods = "CTRL",
+    action = wezterm.action.DisableDefaultAssignment,
+  },
+  {
+    key = "L",
+    mods = "CTRL",
     action = wezterm.action.DisableDefaultAssignment,
   },
   -- Make Option-Left equivalent to Alt-b which many line editors interpret as backward-word

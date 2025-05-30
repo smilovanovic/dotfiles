@@ -31,5 +31,39 @@ return {
         return buf.name
       end,
     },
+    highlights = {
+      fill = {
+        bg = {
+          attribute = "bg",
+          highlight = "Normal",
+        },
+      },
+      background = {
+        bg = {
+          attribute = "bg",
+          highlight = "Normal",
+        },
+      },
+      separator = {
+        fg = {
+          attribute = "bg",
+          highlight = "Normal",
+        },
+        bg = {
+          attribute = "bg",
+          highlight = "Normal",
+        },
+      },
+      separator_selected = {
+        fg = {
+          attribute = "bg",
+          highlight = "Normal",
+        },
+        bg = {
+          attribute = "bg",
+          highlight = "Normal",
+        },
+      },
+    },
   },
 }

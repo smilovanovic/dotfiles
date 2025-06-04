@@ -4,9 +4,11 @@ return {
   version = false,
   opts = {
     provider = "copilot",
-    copilot = {
-      model = "claude-3.5-sonnet",
-      disable_tools = true,
+    providers = {
+      copilot = {
+        model = "claude-3.5-sonnet",
+        disable_tools = true,
+      },
     },
     behaviour = {
       auto_suggestions = false,

@@ -38,6 +38,7 @@ config.launch_menu = {
   },
 }
 
+config.window_decorations = "RESIZE"
 config.window_padding = {
   left = 0,
   right = 0,

@@ -103,12 +103,12 @@ wezterm.on("gui-startup", function(cmd)
   window:gui_window():toggle_fullscreen()
 end)
 
-wezterm.on("format-tab-title", function(tab)
-  local cwd = string.match(tab.active_pane.current_working_dir.file_path, "/([^/]*)$")
-
-  return {
-    { Text = cwd },
-  }
-end)
+-- wezterm.on("format-tab-title", function(tab)
+--   local cwd = string.match(tab.active_pane.current_working_dir.file_path, "/([^/]*)$")
+--
+--   return {
+--     { Text = cwd },
+--   }
+-- end)
 
 return config

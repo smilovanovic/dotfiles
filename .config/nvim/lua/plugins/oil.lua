@@ -18,8 +18,10 @@ return {
     keymaps = {
       ["g?"] = { "actions.show_help", mode = "n" },
       ["<CR>"] = "actions.select",
-      ["<S-CR>"] = { "actions.select", opts = { vertical = true, close = true } },
-      ["<C-CR>"] = { "actions.select", opts = { horizontal = true, close = true } },
+      ["<C-v>"] = { "actions.select", opts = { vertical = true } },
+      ["<C-x>"] = { "actions.select", opts = { horizontal = true } },
+      ["<S-CR>"] = { "actions.select", opts = { vertical = true } },
+      ["<C-CR>"] = { "actions.select", opts = { horizontal = true } },
       -- ["<C-v>"] = { "actions.select", opts = { vertical = true, close = true } },
       -- ["<C-s>"] = { "actions.select", opts = { horizontal = true, close = true } },
       -- ["<C-t>"] = { "actions.select", opts = { tab = true, close = true } },

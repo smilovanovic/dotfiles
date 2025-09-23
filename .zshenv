@@ -37,4 +37,4 @@ export LLM_KEY=NONE
 # INFO: LLMs
 export OLLAMA_API_BASE=http://127.0.0.1:11434
 
-export PATH="$PATH:/Users/stefan/.nvm/versions/node/v20.9.0/bin"
+export PATH="$PATH:/Users/stefan/.nvm/versions/node/v22.17.1/bin"

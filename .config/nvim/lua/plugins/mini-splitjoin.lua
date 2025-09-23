@@ -1,6 +1,6 @@
 return {
-  'echasnovski/mini.splitjoin',
-  version = '*',
+  "nvim-mini/mini.splitjoin",
+  version = "*",
   event = "VeryLazy",
   opts = {},
 }

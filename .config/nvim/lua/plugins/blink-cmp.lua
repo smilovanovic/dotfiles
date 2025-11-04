@@ -4,7 +4,7 @@ return {
     opts = function(_, opts)
       for i, v in ipairs(opts.sources.default) do
         if v == "copilot" then
-          table.remove(opts.sources.default, i)
+          -- table.remove(opts.sources.default, i)
           break
         end
       end

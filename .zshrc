@@ -156,3 +156,8 @@ if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
 fi
 
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/stefan/.cache/lm-studio/bin"
+# End of LM Studio CLI section
+

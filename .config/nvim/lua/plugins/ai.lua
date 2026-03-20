@@ -1,0 +1,86 @@
+return {
+  -- {
+  --   "folke/sidekick.nvim",
+  --   opts = {
+  --     -- cli = {
+  --     --   mux = {
+  --     --     backend = "tmux",
+  --     --     enabled = true,
+  --     --   },
+  --     -- },
+  --     nes = {
+  --       enabled = false,
+  --     },
+  --     -- add any options here
+  --   },
+  -- },
+  --   {
+  --     "CopilotC-Nvim/CopilotChat.nvim",
+  --     opts = {
+  --       mappings = {
+  --         reset = {
+  --           normal = "<C-r>",
+  --           insert = "<C-r>",
+  --           callback = function()
+  --             require("CopilotChat").reset()
+  --           end,
+  --         },
+  --       },
+  --     },
+  --   },
+  -- {
+  --     "saghen/blink.cmp",
+  --     opts = function(_, opts)
+  --       -- for i, v in ipairs(opts.sources.default) do
+  --       --   if v == "copilot" then
+  --       --     table.remove(opts.sources.default, i)
+  --       --     break
+  --       --   end
+  --       -- end
+  --       opts.keymap["<C-c>"] = { "hide", "fallback" }
+  --       opts.keymap["<C-g>"] = {
+  --         function(cmp)
+  --           cmp.show({ providers = { "copilot" } })
+  --         end,
+  --       }
+  --
+  --       opts.sources.per_filetype = {
+  --         sql = { "snippets", "dadbod", "buffer" },
+  --       }
+  --       opts.sources.providers.dadbod = { name = "Dadbod", module = "vim_dadbod_completion.blink" }
+  --       opts.sources.providers.avante = {
+  --                     module = 'blink-cmp-avante',
+  --                     name = 'Avante',
+  --                     opts = {
+  --                         -- options for blink-cmp-avante
+  --                     }
+  --                 }
+  --     end,
+  --   },
+  -- {
+  --   "yetone/avante.nvim",
+  --   keys = function()
+  --     return {}
+  --   end,
+  --   opts = {
+  --     provider = "copilot",
+  --     providers = {
+  --       copilot = {
+  --         model = "claude-haiku-4.5",
+  --       },
+  --     },
+  --     auto_suggestions_provider = "copilot",
+  --     selection = {
+  --       enabled = true,
+  --       hint_display = "delayed",
+  --     },
+  --     -- selection = {
+  --     --   hint_display = "none",
+  --     -- },
+  --     behaviour = {
+  --       auto_suggestions = false,
+  --       auto_set_keymaps = true,
+  --     },
+  --   },
+  -- }
+}

@@ -38,3 +38,11 @@ export LLM_KEY=NONE
 export OLLAMA_API_BASE=http://127.0.0.1:11434
 
 export PATH="$PATH:/Users/stefan/.nvm/versions/node/v22.17.1/bin"
+
+export PATH="$PATH:/opt/homebrew/Cellar/bash/5.3.9/bin"
+
+export PATH="$HOME/.dotnet/tools:$PATH"
+
+source ~/.env
+
+export NUGET_PLUGIN_PATHS="$HOME/.dotnet/tools/.store/microsoft.artifacts.credentialprovider.nuget.tool/2.0.0/microsoft.artifacts.credentialprovider.nuget.tool/2.0.0/tools/net8.0/any/CredentialProvider.Microsoft.dll"

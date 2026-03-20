@@ -1,6 +1,7 @@
 local function open_oil_float(cwd)
+  -- require("oil").open((cwd and vim.uv.cwd() or nil), {
   require("oil").open_float((cwd and vim.uv.cwd() or nil), {
-    preview = { vertical = true },
+    -- preview = { vertical = true },
   })
 end
 
@@ -56,7 +57,11 @@ return {
     float = {
       max_width = 0.8,
       max_height = 0.5,
+      border = "single",
     },
+    -- win_options = {
+    --   winbar = "%{v:lua.require('oil').get_current_dir()}",
+    -- },
   },
   keys = {
     {

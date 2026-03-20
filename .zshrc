@@ -137,6 +137,7 @@ alias term_clear="sudo rm -rf /var/log/asl/*.asl"
 alias clear_nvim_lsp_log="cp /dev/null /Users/stefan/.local/state/nvim/lsp.log"
 alias zsh_startup="time ZSH_DEBUGRC=1 zsh -i -c exit"
 alias cat="bat"
+alias cl="clear"
 
 killport() {
 	for p in $(lsof -ti :$1); do

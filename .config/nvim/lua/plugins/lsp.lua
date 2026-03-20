@@ -61,14 +61,14 @@ return {
       vtsls = {
         enabled = true,
         -- root_dir = get_root_dir,
-        settings = {
-          typescript = {
-            preferences = {
-              importModuleSpecifier = "project-relative",
-              importModuleSpecifierEnding = "minimal",
-            },
-          },
-        },
+        -- settings = {
+        --   typescript = {
+        --     preferences = {
+        --       importModuleSpecifier = "project-relative",
+        --       importModuleSpecifierEnding = "minimal",
+        --     },
+        --   },
+        -- },
       },
       -- pylsp = {
       --   settings = {
